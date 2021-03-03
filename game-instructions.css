@@ -1,0 +1,26 @@
+#ok-btn {
+  text-align: center;
+  padding: 40px;
+  transition: ease-in-out 300ms;
+}
+
+#ok-btn:hover {
+  padding: 60px;
+}
+
+#ok-btn a {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: ease-in 200ms;
+}
+
+#ok-btn a:hover {
+  background-color: white;
+  padding: 30px;
+  color: black;
+  font-weight: 600;
+  border-radius: 20px;
+}

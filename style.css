@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-width: 0px;
+  border-width: 0px;
+  font-family: Roboto, Oxygen, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(180deg, rgb(0, 255, 191), rgb(0, 70, 255));
+  color: white;
+  min-height: 100vh;
+}
+
+.rectangle {
+  border: 2px solid blue;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+}
+
+.transparent-rect {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  position: absolute;
+  border-radius: 90px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  cursor: pointer;
+}
+
+#snap,
+.try-spec-btn {
+  color: black;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0.5rem;
+}
+
+#snap {
+  top: 84vh;
+  left: 85vh;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#snap img {
+  width: 60px;
+  height: 60px;
+}
+
+.try-spec-btn {
+  top: 86vh;
+  left: 98vh;
+}
+
+#try-spec-btn-img {
+  width: 110px;
+  height: 40px;
+}
+
+#next-spec img,
+#prev-spec img {
+  width: 50px;
+  height: 50px;
+}
+
+#next-spec,
+#prev-spec {
+  background-color: rgba(0, 0, 0, 0);
+  width: 50px;
+  height: 50px;
+}
+
+#next-spec {
+  top: 80vh;
+  left: 175vh;
+}
+
+#prev-spec {
+  top: 80vh;
+  left: 10vh;
+}
+
+#clicked-img {
+  position: absolute;
+  top: 18vh;
+  left: 105vh;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  transition: ease-in-out 300ms;
+}
+
+#person-icon {
+  position: absolute;
+  top: 18vh;
+  left: 105vh;
+}
+
+#clicked-img:hover {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.103),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.151), 0 12.5px 10px rgba(0, 0, 0, 0.205),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.233), 0 41.8px 33.4px rgba(0, 0, 0, 0.178),
+    0 100px 80px rgba(0, 0, 0, 0.336);
+}
+
+#spec {
+  position: absolute;
+  z-index: 2;
+}
+
+#video {
+  position: absolute;
+  top: 18vh;
+  left: 10vh;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  transition: ease-in-out 300ms;
+}
+
+#video:hover {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.103),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.151), 0 12.5px 10px rgba(0, 0, 0, 0.205),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.233), 0 41.8px 33.4px rgba(0, 0, 0, 0.178),
+    0 100px 80px rgba(0, 0, 0, 0.336);
+}
+
+#camera-shutter-img {
+  position: absolute;
+  z-index: 1;
+  outline-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#instructions-icon {
+  position: absolute;
+  top: 90vh;
+  left: 2.5vh;
+}
+
+/* Effects */
+.camera-shutter-on {
+  background-color: white;
+  width: 640px;
+  height: 480px;
+  top: 18vh;
+  left: 10vh;
+  transition: ease 500ms;
+}
+.camera-shutter-off {
+  background-color: rgba(0, 0, 0, 0);
+  width: 0px;
+  height: 0px;
+  top: 48vh;
+  left: 150vh;
+}

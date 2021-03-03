@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Try some specticles</title>`
+
+    <script src="../tracking.js-master/build/tracking-min.js"></script>
+    <script src="../tracking.js-master/build/data/face-min.js"></script>
+    <script src="../tracking.js-master/build/data/eye-min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="shortcut icon" href="../favicon.png">
+
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <a href='index.html'>
+          <li id="link">Home</li>
+        </a>
+        <a href='hello.html'>
+          <li id="link">Login</li>
+        </a>
+        <a href='diff.html'>
+          <li id="link">Difference- AR/VR/MR/XR</li>
+        </a>
+        <a href='instructions.html'>
+          <li id="link">Try some specticles</li>
+        </a>
+        <a href='credits.html'>
+          <li id="link">Credits</li>
+        </a>
+        <a href='game-instructions.html'>
+          <li id="link">AR Game</li>
+        </a>
+      </ul>
+    </nav>
+    <div class="image-container">
+      <div class="content">
+
+        <video id="video" width="640" height="480"></video>
+        <img id="camera-shutter-img">
+        <audio id="camera-shutter">
+          <source src="./assets/static/sounds/camera-shutter.mp3" type="audio/mpeg">
+        </audio>
+        <img id="person-icon" width="200" height="200" style="top: 28vh; left: 130vh;"
+          src="./assets/static/person-icon.png">
+        <img id="clicked-img">
+        <canvas id="canvas" width="640" height="480"></canvas>
+
+      </div>
+      <div class="rect-container">
+      </div>
+      <img id="spec" />
+
+    </div>
+
+    <audio id="wrong-sound">
+      <source src="./assets/static/sounds/wrong.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="correct-sound">
+      <source src="./assets/static/sounds/correct.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="next-spec"><img></button>
+    <button id="prev-spec"><img></button>
+
+    <button id="snap"><img src="./assets/static/camera-icon.png"></button>
+    <button class="try-spec-btn">
+      <img id="try-spec-btn-img">
+    </button>
+
+    <a href="./instructions.html">
+      <img src="./assets/static/instructions-icon.png" alt="./instructions.html" id="instructions-icon">
+    </a>
+
+    <script src="camera.js"></script>
+    <script type="module" src="consts.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+
+</html>
