@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-width: 0px;
+  border-width: 0px;
+  font-family: Roboto, Oxygen, sans-serif;
+}
+
+#heading {
+  padding: 30px;
+  font-size: 40px;
+  font-weight: 800;
+  text-align-last: center;
+}
+
+#descp ul {
+  list-style: none;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  margin: auto;
+  width: 940px;
+  border-radius: 10px;
+}
+
+#descp ul li {
+  font-size: 25px;
+  padding: 7px;
+  font-weight: 600;
+}
